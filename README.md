@@ -18,9 +18,13 @@ Configuration:
 Before using the script, edit the following variables at the top of the file as needed:
 
 CPU_LIMIT=80       # Maximum CPU usage allowed (%)
+
 RAM_LIMIT=80       # Maximum RAM usage allowed (%)
+
 DISK_LIMIT=80      # Maximum disk usage allowed (%)
+
 LOG_FILE="/var/log/system_monitor.log"  # Log file path
+
 ALERT_EMAIL="your@email.com"            # Alert recipient
 
 Requirements:
@@ -49,8 +53,11 @@ Output:
 Permissions:
 
 Ensure the script has the necessary permissions to access system metrics and write logs:
+
 sudo chmod +x system_monitor.sh
+
 sudo touch /var/log/system_monitor.log
+
 sudo chown $(whoami) /var/log/system_monitor.log
 
 Notes:
